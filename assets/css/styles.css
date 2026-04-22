@@ -692,6 +692,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .footer__bottom { border-top: 1px solid rgba(255,255,255,0.05); padding: 1.25rem clamp(1rem, 5vw, 3rem); text-align: center; }
 .footer__bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.25); font-family: var(--font-text); }
 
+/* ===== HIDE MOBILE ===== */
+.hide-mobile { display: block; }
+@media (max-width: 768px) {
+  .hide-mobile { display: none; }
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .camaras__grid { grid-template-columns: 1fr 1fr; }
