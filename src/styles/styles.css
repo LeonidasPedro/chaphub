@@ -470,8 +470,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .ecos-line { animation: dashFlow 3s linear infinite; }
 @keyframes dashFlow { to { stroke-dashoffset: -30; } }
 .ecos-ring { animation: ringPulse 3s ease-in-out infinite; }
-.ecos-node { transition: transform 0.3s ease; }
-.ecos-node:hover { transform: scale(1.1); }
+.ecos-node {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.ecos-node:hover {
+  transform: scale(1.04);
+  filter: brightness(1.25) drop-shadow(0 0 6px rgba(27,189,232,0.5));
+}
 .orbit-dot {
   animation: orbitAnim 8s linear infinite;
   transform-origin: 350px 250px;
@@ -538,6 +545,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .chapeco__dot--cyan { background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
 .chapeco__map-body { padding: 1rem; }
 .chapeco__map-svg { width: 100%; height: auto; }
+.sc-outline-map { width: 100%; height: auto; display: block; }
+.ecossistema__map-card { max-width: 480px; margin: 0 auto; }
 .city-pulse { animation: cityPulse 2s ease-in-out infinite; }
 .city-pulse-ring { animation: cityRing 2s ease-in-out infinite; }
 @keyframes cityPulse { 0%,100%{ opacity:1; } 50%{ opacity:0.6; } }
