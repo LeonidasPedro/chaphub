@@ -13,7 +13,7 @@ import useSmoothScroll from './hooks/useSmoothScroll.js';
 
 export default function App() {
   useSmoothScroll();
-  useEffect(() => { document.title = 'ChapHub — Ecossistema de Inovação'; }, []);
+  useEffect(() => { document.title = 'ChapHub Ecossistema de Inovação'; }, []);
   return (
     <>
       <Nav />
