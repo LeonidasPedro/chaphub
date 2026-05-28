@@ -29,7 +29,7 @@ export default function Contato() {
             Seja uma empresa, startup, pesquisador ou instituição — há um lugar para você no ChapHub. Venha construir o futuro de Chapecó.
           </p>
           <div className="contato__social">
-            <a href="https://www.linkedin.com/company/chaphub" target="_blank" rel="noopener" className="social-link" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/chaphub-ecossistema-de-inovação-de-chapecó-193978356" target="_blank" rel="noopener" className="social-link" aria-label="LinkedIn">
               <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
                 <circle cx="4" cy="4" r="2" />
