@@ -41,7 +41,7 @@ npm run preview
 src/
   components/   seções da landing (Nav, Hero, Sobre, ...)
   hooks/        comportamento (fade-in, count-up, partículas, typed)
-  data/         conteúdo (câmaras, parceiros, palavras do typed)
+  data/         conteúdo (câmaras, governança, palavras do typed)
   styles/       CSS global
 public/
   assets/fonts/ fontes Organetto

@@ -6,7 +6,7 @@ import Numeros from './components/Numeros.jsx';
 import Camaras from './components/Camaras.jsx';
 import Ecossistema from './components/Ecossistema.jsx';
 import Chapeco from './components/Chapeco.jsx';
-import Parceiros from './components/Parceiros.jsx';
+import Governanca from './components/Governanca.jsx';
 import Contato from './components/Contato.jsx';
 import Footer from './components/Footer.jsx';
 import useSmoothScroll from './hooks/useSmoothScroll.js';
@@ -23,7 +23,7 @@ export default function App() {
       <Camaras />
       <Ecossistema />
       <Chapeco />
-      <Parceiros />
+      <Governanca />
       <Contato />
       <Footer />
     </>

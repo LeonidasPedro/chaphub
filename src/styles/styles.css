@@ -557,14 +557,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .map-stat__val { font-family: var(--font-text); font-size: 0.9rem; font-weight: 700; color: var(--cyan); }
 .map-stat__key { font-size: 0.65rem; color: var(--gray); text-align: center; }
 
-/* ===== PARCEIROS ===== */
-.parceiros {
+/* ===== GOVERNANÇA ===== */
+.governanca {
   padding: clamp(4rem, 8vw, 7rem) 0;
   background: var(--black);
 }
-.parceiros__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
-.parceiro-item { display: flex; align-items: center; justify-content: center; }
-.parceiro-logo {
+.governanca__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
+.governanca-item { display: flex; align-items: center; justify-content: center; }
+.governanca-logo {
   width: 100%;
   padding: 1.25rem 1rem;
   border: 1px solid rgba(255,255,255,0.07);
@@ -577,8 +577,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: border-color var(--trans), background var(--trans), transform var(--trans);
   cursor: default;
 }
-.parceiro-logo:hover { border-color: rgba(27,189,232,0.3); background: rgba(27,189,232,0.04); transform: translateY(-3px); }
-.parceiro-logo span {
+.governanca-logo:hover { border-color: rgba(27,189,232,0.3); background: rgba(27,189,232,0.04); transform: translateY(-3px); }
+.governanca-logo span {
   font-family: var(--font-text);
   font-size: 0.8rem;
   font-weight: 700;
@@ -587,7 +587,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: 0.07em;
   transition: color var(--trans);
 }
-.parceiro-logo:hover span { color: var(--white); }
+.governanca-logo:hover span { color: var(--white); }
 
 /* ===== CONTATO ===== */
 .contato {
@@ -727,12 +727,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .contato__container { grid-template-columns: 1fr; }
   .camaras__grid { grid-template-columns: 1fr; }
   .numeros__grid { grid-template-columns: 1fr 1fr; }
-  .parceiros__grid { grid-template-columns: repeat(2, 1fr); }
+  .governanca__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 480px) {
   .numeros__grid { grid-template-columns: 1fr; }
-  .parceiros__grid { grid-template-columns: 1fr 1fr; }
+  .governanca__grid { grid-template-columns: 1fr 1fr; }
   .hero__ctas { flex-direction: column; align-items: center; }
   .hero__ctas .btn { width: 100%; max-width: 300px; justify-content: center; }
 }
