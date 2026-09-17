@@ -11,7 +11,6 @@ export default function Hero() {
       <canvas className="hero__canvas" id="heroCanvas" ref={canvasRef}></canvas>
       <div className="hero__overlay"></div>
       <div className="hero__content">
-        <div className="hero__tag">Chapecó · Santa Catarina · Brasil</div>
         <h1 className="hero__title">
           Primeiro Ecossistema de<br />Inovação do<br />
           <span className="hero__title-gradient">Oeste Catarinense.</span>

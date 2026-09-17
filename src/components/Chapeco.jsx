@@ -8,31 +8,15 @@ export default function Chapeco() {
       <div className="chapeco__bg-overlay"></div>
       <div className="container chapeco__container">
         <div className="chapeco__content fade-in">
-          <span className="section-label">A Cidade</span>
-          <div className="chapeco__badge">Capital Brasileira da Agroindústria</div>
           <h2 className="section-title">Chapecó,<br /><span className="text-cyan">Polo de Inovação</span></h2>
           <p className="chapeco__desc">
             Localizada no coração do Oeste Catarinense, Chapecó combina a força de uma economia agroindústrial robusta com um ecossistema tecnológico vibrante. Somos a cidade que une o campo ao código, o trator à inteligência artificial.
           </p>
-          <div className="chapeco__facts">
-            <div className="fact">
-              <span className="fact__icon">🌾</span>
-              <div><strong>Maior centro mundial</strong><br />em produção de proteína animal</div>
-            </div>
-            <div className="fact">
-              <span className="fact__icon">💡</span>
-              <div><strong>13ª cidade</strong><br />com mais startups no Brasil</div>
-            </div>
-            <div className="fact">
-              <span className="fact__icon">🏭</span>
-              <div><strong>28,4% do PIB</strong><br />vem da indústria — 2º em SC</div>
-            </div>
-            <div className="fact">
-              <span className="fact__icon">📍</span>
-              <div><strong>Oeste Catarinense</strong><br />Chapecó · Santa Catarina · Sul do Brasil</div>
-            </div>
-          </div>
-          <a href="#contato" className="btn btn--primary">Conheça Chapecó</a>
+          <ul className="chapeco__facts">
+            <li className="fact">Articulação entre empresas, instituições de ensino e poder público</li>
+            <li className="fact">Grupos de Trabalho temáticos que transformam demandas do setor em projetos</li>
+            <li className="fact">Apoio a startups e à adoção de tecnologia na economia regional</li>
+          </ul>
         </div>
         <div className="chapeco__visual fade-in" style={{ transitionDelay: '0.2s' }}>
           <div className="chapeco__map-card">

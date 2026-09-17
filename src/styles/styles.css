@@ -229,20 +229,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: 6rem clamp(1rem, 5vw, 3rem) 4rem;
   max-width: 900px;
 }
-.hero__tag {
-  display: inline-block;
-  font-family: var(--font-text);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--cyan);
-  border: 1px solid rgba(27,189,232,0.3);
-  padding: 0.35rem 1rem;
-  border-radius: 50px;
-  margin-bottom: 1.5rem;
-  animation: fadeSlideDown 0.8s ease 0.2s both;
-}
 .hero__title {
   font-family: var(--font-text);
   font-size: clamp(2.2rem, 6vw, 5rem);
@@ -463,10 +449,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
 }
 .ecossistema::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 40%, rgba(88,85,166,0.1) 0%, transparent 60%); pointer-events: none; }
-.ecossistema__diagram { max-width: 700px; margin: 0 auto 3rem; }
+.ecossistema__diagram { max-width: 700px; margin: 0 auto; }
 .ecos-svg { width: 100%; height: auto; }
-.ecos-line { animation: dashFlow 3s linear infinite; }
-@keyframes dashFlow { to { stroke-dashoffset: -30; } }
 .ecos-ring { animation: ringPulse 3s ease-in-out infinite; }
 .ecos-node {
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -477,19 +461,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: scale(1.04);
   filter: brightness(1.25) drop-shadow(0 0 6px rgba(27,189,232,0.5));
 }
-.orbit-dot {
-  animation: orbitAnim 8s linear infinite;
-  transform-origin: 350px 250px;
-}
-@keyframes orbitAnim {
-  from { transform: rotate(0deg) translateX(175px) rotate(0deg); transform-box: fill-box; }
-  to   { transform: rotate(360deg) translateX(175px) rotate(-360deg); transform-box: fill-box; }
-}
-.ecossistema__stats { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem 4rem; text-align: center; border-top: 1px solid rgba(27,189,232,0.1); padding-top: 2.5rem; }
-.ecos-stat { display: flex; flex-direction: column; gap: 0.25rem; }
-.ecos-stat__num { font-family: var(--font-text); font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900; color: var(--cyan); }
-.ecos-stat__label { font-size: 0.8rem; color: rgba(255,255,255,0.5); font-family: var(--font-text); }
-
+.ecos-line { animation: dashFlow 3s linear infinite; }
+@keyframes dashFlow { to { stroke-dashoffset: -30; } }
 /* ===== CHAPECÓ ===== */
 .chapeco {
   padding: clamp(4rem, 8vw, 7rem) 0;
@@ -499,25 +472,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .chapeco__bg-overlay { position: absolute; inset: 0; background: radial-gradient(ellipse at 80% 50%, rgba(27,189,232,0.06) 0%, transparent 60%); pointer-events: none; }
 .chapeco__container { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; position: relative; z-index: 1; }
-.chapeco__badge {
-  display: inline-block;
-  font-family: var(--font-text);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--black);
-  background: var(--cyan);
-  padding: 0.35rem 1rem;
-  border-radius: 50px;
-  margin-bottom: 1rem;
-}
 .chapeco__desc { font-size: 1rem; color: rgba(255,255,255,0.6); margin-bottom: 2rem; line-height: 1.8; font-family: var(--font-text); }
-.chapeco__facts { display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem; font-family: var(--font-text); }
-.fact { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.9rem; }
-.fact__icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; }
-.fact strong { color: var(--white); display: block; }
-.fact div { color: rgba(255,255,255,0.55); }
+.chapeco__facts { list-style: none; display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem; font-family: var(--font-text); }
+.fact { position: relative; padding-left: 1.1rem; font-size: 0.9rem; line-height: 1.6; color: rgba(255,255,255,0.6); }
+.fact::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 5px; height: 5px; border-radius: 50%; background: var(--cyan); }
 .chapeco__visual { display: flex; align-items: center; justify-content: center; }
 .chapeco__map-card {
   background: var(--dark-2);
