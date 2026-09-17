@@ -1,11 +1,8 @@
 const BASE = '/chaphub/CLIENTE ECOSSISTEMA/Logos do Ecossistema de Inovação png';
 const LOGO_H = `${BASE}/CHAPHUB-horizontal-branca.png`;
 const SUB = [
-  { src: `${BASE}/AGRO-branca.png`, alt: 'Agro' },
-  { src: `${BASE}/TIC-preta.png`, alt: 'TIC' },
-  { src: `${BASE}/SAÚDE-branca.png`, alt: 'Saúde' },
-  { src: `${BASE}/CAM.TEC-branca.png`, alt: 'Câm.Tec' },
-  { src: `${BASE}/MAQeEQUIP-branca.png`, alt: 'Máq&Equip' },
+  { src: `${BASE}/AGRO-branca.png`, alt: 'GT Agro' },
+  { src: `${BASE}/SAÚDE-branca.png`, alt: 'GT Saúde' },
 ];
 
 export default function Footer() {
