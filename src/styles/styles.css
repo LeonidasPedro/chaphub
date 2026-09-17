@@ -385,18 +385,18 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .numero-card__label { font-family: var(--font-text); font-size: 0.85rem; font-weight: 700; color: var(--white); }
 .numero-card__sub { font-size: 0.75rem; color: var(--gray); font-family: var(--font-text); }
 
-/* ===== CÂMARAS ===== */
-.camaras {
+/* ===== GRUPOS DE TRABALHO (GTs) ===== */
+.gts {
   padding: clamp(4rem, 8vw, 7rem) 0;
   background: var(--dark);
   position: relative;
 }
-.camaras::before { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 600px; height: 300px; background: radial-gradient(ellipse, rgba(88,85,166,0.08) 0%, transparent 70%); pointer-events: none; }
-.camaras__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-.camaras__grid .camara-card:nth-child(4) { grid-column: 1; }
-.camaras__grid .camara-card:nth-child(5) { grid-column: 2; }
+.gts::before { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 600px; height: 300px; background: radial-gradient(ellipse, rgba(88,85,166,0.08) 0%, transparent 70%); pointer-events: none; }
+.gts__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.gts__grid .gt-card:nth-child(4) { grid-column: 1; }
+.gts__grid .gt-card:nth-child(5) { grid-column: 2; }
 
-.camara-card {
+.gt-card {
   background: rgba(20,20,20,0.8);
   border: 1px solid rgba(255,255,255,0.07);
   border-radius: var(--radius-lg);
@@ -409,7 +409,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: border-color var(--trans), transform var(--trans), box-shadow var(--trans);
   cursor: default;
 }
-.camara-card::after {
+.gt-card::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -419,19 +419,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: opacity var(--trans);
   pointer-events: none;
 }
-.camara-card[data-color="cyan"] { --hover-color: rgba(27,189,232,0.07); --accent: var(--cyan); --accent-dim: var(--cyan-dim); }
-.camara-card[data-color="purple"] { --hover-color: rgba(88,85,166,0.1); --accent: var(--purple); --accent-dim: var(--purple-dim); }
-.camara-card[data-color="dark"] { --hover-color: rgba(255,255,255,0.03); --accent: #888; --accent-dim: rgba(255,255,255,0.05); }
+.gt-card[data-color="cyan"] { --hover-color: rgba(27,189,232,0.07); --accent: var(--cyan); --accent-dim: var(--cyan-dim); }
+.gt-card[data-color="purple"] { --hover-color: rgba(88,85,166,0.1); --accent: var(--purple); --accent-dim: var(--purple-dim); }
+.gt-card[data-color="dark"] { --hover-color: rgba(255,255,255,0.03); --accent: #888; --accent-dim: rgba(255,255,255,0.05); }
 
-.camara-card:hover { border-color: var(--accent); transform: translateY(-6px); box-shadow: 0 16px 50px rgba(0,0,0,0.4); }
-.camara-card:hover::after { opacity: 1; }
-.camara-card__glow { position: absolute; top: -40px; right: -40px; width: 120px; height: 120px; background: radial-gradient(circle, var(--accent, #1BBDE8), transparent 70%); opacity: 0; transition: opacity 0.5s ease; pointer-events: none; }
-.camara-card:hover .camara-card__glow { opacity: 0.2; }
-.camara-card__logo { height: 44px; display: flex; align-items: center; }
-.camara-card__logo img { height: 100%; width: auto; object-fit: contain; }
-.camara-card__title { font-family: var(--font-text); font-size: 1.05rem; font-weight: 700; color: var(--white); }
-.camara-card__text { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.65; flex: 1; font-family: var(--font-text); }
-.camara-card__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.gt-card:hover { border-color: var(--accent); transform: translateY(-6px); box-shadow: 0 16px 50px rgba(0,0,0,0.4); }
+.gt-card:hover::after { opacity: 1; }
+.gt-card__glow { position: absolute; top: -40px; right: -40px; width: 120px; height: 120px; background: radial-gradient(circle, var(--accent, #1BBDE8), transparent 70%); opacity: 0; transition: opacity 0.5s ease; pointer-events: none; }
+.gt-card:hover .gt-card__glow { opacity: 0.2; }
+.gt-card__logo { height: 44px; display: flex; align-items: center; }
+.gt-card__logo img { height: 100%; width: auto; object-fit: contain; }
+.gt-card__title { font-family: var(--font-text); font-size: 1.05rem; font-weight: 700; color: var(--white); }
+.gt-card__text { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.65; flex: 1; font-family: var(--font-text); }
+.gt-card__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .tag {
   font-family: var(--font-text);
   font-size: 0.65rem;
@@ -444,7 +444,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--accent, rgba(255,255,255,0.5));
   background: var(--accent-dim, rgba(255,255,255,0.03));
 }
-.camara-card__bar {
+.gt-card__bar {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -455,7 +455,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform-origin: left;
   transition: transform 0.5s ease;
 }
-.camara-card:hover .camara-card__bar { transform: scaleX(1); }
+.gt-card:hover .gt-card__bar { transform: scaleX(1); }
 
 /* ===== ECOSSISTEMA ===== */
 .ecossistema {
@@ -709,8 +709,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-  .camaras__grid { grid-template-columns: 1fr 1fr; }
-  .camaras__grid .camara-card:nth-child(4), .camaras__grid .camara-card:nth-child(5) { grid-column: auto; }
+  .gts__grid { grid-template-columns: 1fr 1fr; }
+  .gts__grid .gt-card:nth-child(4), .gts__grid .gt-card:nth-child(5) { grid-column: auto; }
   .footer__container { grid-template-columns: 1fr 1fr; }
   .footer__subbrands { grid-column: 1 / -1; }
 }
@@ -725,7 +725,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .chapeco__container { grid-template-columns: 1fr; }
   .chapeco__visual { display: none; }
   .contato__container { grid-template-columns: 1fr; }
-  .camaras__grid { grid-template-columns: 1fr; }
+  .gts__grid { grid-template-columns: 1fr; }
   .numeros__grid { grid-template-columns: 1fr 1fr; }
   .governanca__grid { grid-template-columns: repeat(2, 1fr); }
 }

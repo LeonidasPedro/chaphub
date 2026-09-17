@@ -3,7 +3,7 @@ import Nav from './components/Nav.jsx';
 import Hero from './components/Hero.jsx';
 import Sobre from './components/Sobre.jsx';
 import Numeros from './components/Numeros.jsx';
-import Camaras from './components/Camaras.jsx';
+import Gts from './components/Gts.jsx';
 import Ecossistema from './components/Ecossistema.jsx';
 import Chapeco from './components/Chapeco.jsx';
 import Governanca from './components/Governanca.jsx';
@@ -20,7 +20,7 @@ export default function App() {
       <Hero />
       <Sobre />
       <Numeros />
-      <Camaras />
+      <Gts />
       <Ecossistema />
       <Chapeco />
       <Governanca />

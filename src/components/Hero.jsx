@@ -23,7 +23,7 @@ export default function Hero() {
         </p>
         <div className="hero__ctas">
           <a href="#sobre" className="btn btn--primary">Conheça o Ecossistema</a>
-          <a href="#camaras" className="btn btn--ghost">Nossas Câmaras</a>
+          <a href="#gts" className="btn btn--ghost">Nossos GTs</a>
         </div>
       </div>
       <div className="hero__triangle-wrap">

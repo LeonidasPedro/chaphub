@@ -20,18 +20,18 @@ export default function Footer() {
           <div className="footer__col">
             <h5>Navegação</h5>
             <a href="#sobre">Sobre</a>
-            <a href="#camaras">Câmaras</a>
+            <a href="#gts">GTs</a>
             <a href="#ecossistema">Ecossistema</a>
             <a href="#chapeco">Chapecó</a>
             <a href="#contato">Contato</a>
           </div>
           <div className="footer__col">
-            <h5>Câmaras</h5>
-            <a href="#camaras">Agronegócio</a>
-            <a href="#camaras">TIC</a>
-            <a href="#camaras">Saúde</a>
-            <a href="#camaras">Câmara Técnica</a>
-            <a href="#camaras">Máquinas & Equip.</a>
+            <h5>GTs</h5>
+            <a href="#gts">Agronegócio</a>
+            <a href="#gts">TIC</a>
+            <a href="#gts">Saúde</a>
+            <a href="#gts">GT Técnico</a>
+            <a href="#gts">Máquinas & Equip.</a>
           </div>
         </div>
         <div className="footer__subbrands">

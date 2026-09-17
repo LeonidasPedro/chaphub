@@ -22,7 +22,7 @@ export default function Nav() {
         </a>
         <nav className={`nav__links${open ? ' open' : ''}`} id="navLinks">
           <a href="#sobre" className="nav__link" onClick={close}>Sobre</a>
-          <a href="#camaras" className="nav__link" onClick={close}>Câmaras</a>
+          <a href="#gts" className="nav__link" onClick={close}>GTs</a>
           <a href="#ecossistema" className="nav__link" onClick={close}>Ecossistema</a>
           <a href="#chapeco" className="nav__link" onClick={close}>Localização</a>
           <a href="#contato" className="nav__link" onClick={close}>Contato</a>
