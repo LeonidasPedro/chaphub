@@ -27,11 +27,9 @@ export default function Footer() {
           </div>
           <div className="footer__col">
             <h5>GTs</h5>
-            <a href="#gts">Agronegócio</a>
-            <a href="#gts">TIC</a>
-            <a href="#gts">Saúde</a>
-            <a href="#gts">GT Técnico</a>
-            <a href="#gts">Máquinas & Equip.</a>
+            <a href="#gts">GT Agro</a>
+            <a href="#gts">GT Saúde</a>
+            <a href="#gts">GT Educação</a>
           </div>
         </div>
         <div className="footer__subbrands">

@@ -393,8 +393,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .gts::before { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 600px; height: 300px; background: radial-gradient(ellipse, rgba(88,85,166,0.08) 0%, transparent 70%); pointer-events: none; }
 .gts__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-.gts__grid .gt-card:nth-child(4) { grid-column: 1; }
-.gts__grid .gt-card:nth-child(5) { grid-column: 2; }
 
 .gt-card {
   background: rgba(20,20,20,0.8);
@@ -710,7 +708,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .gts__grid { grid-template-columns: 1fr 1fr; }
-  .gts__grid .gt-card:nth-child(4), .gts__grid .gt-card:nth-child(5) { grid-column: auto; }
   .footer__container { grid-template-columns: 1fr 1fr; }
   .footer__subbrands { grid-column: 1 / -1; }
 }
