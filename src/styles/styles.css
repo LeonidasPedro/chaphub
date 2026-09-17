@@ -16,7 +16,7 @@
   --ink:        #06070C;
   --ink-soft:   rgba(6,7,12,0.62);
   --grad-cta:   linear-gradient(90deg, #1BBDE8, #5855A6);
-  --font-head:  'Saira', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-head:  'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-text:  'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
   --radius:     12px;
   --radius-lg:  20px;
@@ -59,7 +59,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .section-title {
   font-family: var(--font-head);
-  letter-spacing: -0.015em;
+  font-stretch: 112%;
+  letter-spacing: -0.02em;
   font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 700;
   line-height: 1.1;
@@ -204,7 +205,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .hero__title {
   font-family: var(--font-head);
-  letter-spacing: -0.02em;
+  font-stretch: 112%;
+  letter-spacing: -0.025em;
   font-size: clamp(2.2rem, 6vw, 5rem);
   font-weight: 900;
   line-height: 1.05;
@@ -333,6 +335,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .numero-card__icon svg { width: 100%; height: 100%; }
 .numero-card__value {
   font-family: var(--font-head);
+  font-stretch: 110%;
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 900;
   color: var(--cyan);
@@ -350,6 +353,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   padding: clamp(4rem, 8vw, 7rem) 0;
   background: var(--dark);
   position: relative;
+  overflow: hidden;
 }
 .gts::before { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 600px; height: 300px; background: radial-gradient(ellipse, rgba(88,85,166,0.08) 0%, transparent 70%); pointer-events: none; }
 .gts__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
@@ -384,7 +388,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .gt-card:hover .gt-card__glow { opacity: 0.2; }
 .gt-card__logo { height: 44px; display: flex; align-items: center; }
 .gt-card__logo img { height: 100%; width: auto; object-fit: contain; }
-.gt-card__title { font-family: var(--font-head); font-size: 1.05rem; font-weight: 700; color: var(--white); }
+.gt-card__title { font-family: var(--font-head); font-stretch: 110%; font-size: 1.05rem; font-weight: 700; color: var(--white); }
 .gt-card__text { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.65; flex: 1; font-family: var(--font-text); }
 .gt-card__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .tag {
