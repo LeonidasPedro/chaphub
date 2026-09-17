@@ -445,45 +445,26 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   position: relative;
   overflow: hidden;
 }
-.chapeco__bg-overlay { position: absolute; inset: 0; background: radial-gradient(ellipse at 80% 50%, rgba(27,189,232,0.06) 0%, transparent 60%); pointer-events: none; }
-.chapeco__container { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; position: relative; z-index: 1; }
-.chapeco__desc { font-size: 1rem; color: rgba(255,255,255,0.6); margin-bottom: 2rem; line-height: 1.8; font-family: var(--font-text); }
-.chapeco__visual { display: flex; align-items: center; justify-content: center; }
-.chapeco__map-card {
-  background: var(--dark-2);
-  border: 1px solid rgba(27,189,232,0.15);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  width: 100%;
-  max-width: 380px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+.chapeco__map {
+  position: absolute;
+  top: 50%;
+  right: -18%;
+  width: min(72%, 900px);
+  transform: translateY(-50%);
+  opacity: 0.5;
+  pointer-events: none;
 }
-.chapeco__map-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1.25rem;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  font-family: var(--font-text);
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.7);
-}
-.chapeco__dot { width: 8px; height: 8px; border-radius: 50%; }
-.chapeco__dot--cyan { background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
-.chapeco__map-body { padding: 1rem; }
-.chapeco__map-svg { width: 100%; height: auto; }
+.chapeco__container { position: relative; z-index: 1; max-width: 1200px; }
+.chapeco__content { max-width: 34rem; }
+.chapeco__desc { font-size: 1rem; color: rgba(255,255,255,0.6); margin-bottom: 3rem; line-height: 1.8; font-family: var(--font-text); }
 .sc-outline-map { width: 100%; height: auto; display: block; }
-.ecossistema__map-card { max-width: 480px; margin: 0 auto; }
-.city-pulse { animation: cityPulse 2s ease-in-out infinite; }
-.city-pulse-ring { animation: cityRing 2s ease-in-out infinite; }
-@keyframes cityPulse { 0%,100%{ opacity:1; } 50%{ opacity:0.6; } }
-@keyframes cityRing  { 0%,100%{ r:12; opacity:0.4; } 50%{ r:18; opacity:0; } }
-.chapeco__map-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.06); }
-.map-stat { display: flex; flex-direction: column; align-items: center; padding: 1rem 0.5rem; border-right: 1px solid rgba(255,255,255,0.06); font-family: var(--font-text); }
-.map-stat:last-child { border-right: none; }
-.map-stat__val { font-family: var(--font-text); font-size: 0.9rem; font-weight: 700; color: var(--cyan); }
-.map-stat__key { font-size: 0.65rem; color: var(--gray); text-align: center; }
+
+/* dados em linha, separados por filete vertical (recurso do manual) */
+.chapeco__dados { display: flex; flex-wrap: wrap; gap: 0 clamp(1.5rem, 4vw, 3rem); font-family: var(--font-text); }
+.dado { padding-left: clamp(1.5rem, 4vw, 3rem); border-left: 1px solid rgba(255,255,255,0.15); }
+.dado:first-child { padding-left: 0; border-left: none; }
+.dado__val { font-family: var(--font-head); font-stretch: 110%; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: var(--white); line-height: 1.1; }
+.dado__key { margin: 0.35rem 0 0; font-size: 0.78rem; color: var(--gray); }
 
 /* ===== GOVERNANÇA ===== */
 .governanca {
@@ -639,21 +620,22 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .numeros, .governanca { color: var(--ink); }
 .numeros .section-title, .governanca .section-title { color: var(--ink); }
 .numeros .section-desc, .governanca .section-desc { color: var(--ink-soft); }
-.numeros .section-label, .governanca .section-label { color: #0F7D9E; }
-.numeros .text-cyan, .governanca .text-cyan { color: #0F7D9E; }
+.numeros .section-label, .governanca .section-label { color: var(--purple); }
+.numeros .text-cyan, .governanca .text-cyan { color: var(--purple); }
 .numeros__bg-tri { opacity: 0.25; }
 .numero-card {
   background: var(--light);
   border-color: rgba(6,7,12,0.1);
   box-shadow: 0 1px 2px rgba(6,7,12,0.04);
 }
-.numero-card:hover { border-color: rgba(6,7,12,0.25); box-shadow: 0 12px 30px rgba(6,7,12,0.08); }
+.numero-card:hover { border-color: rgba(88,85,166,0.45); box-shadow: 0 12px 30px rgba(6,7,12,0.08); }
+.numeros .numero-card::before { background: var(--purple); }
 .numero-card__icon { color: var(--ink); }
 .numero-card__value, .count-prefix, .count-suffix { color: var(--ink); }
 .numero-card__label { color: var(--ink); }
 .numero-card__sub { color: var(--ink-soft); }
 .governanca-logo { border-color: rgba(6,7,12,0.12); background: var(--light); }
-.governanca-logo:hover { border-color: rgba(6,7,12,0.3); background: var(--light); }
+.governanca-logo:hover { border-color: rgba(88,85,166,0.5); background: var(--light); }
 .governanca-logo span { color: var(--ink-soft); }
 .governanca-logo:hover span { color: var(--ink); }
 
@@ -671,8 +653,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero__triangle-wrap { display: none; }
   .sobre__grid { grid-template-columns: 1fr; }
   .sobre__visual { display: none; }
-  .chapeco__container { grid-template-columns: 1fr; }
-  .chapeco__visual { display: none; }
+  .chapeco__map { right: -30%; width: 110%; opacity: 0.28; }
+  .chapeco__dados { gap: 1.5rem 0; }
+  .dado { flex: 1 1 100%; padding-left: 0.9rem; border-left: 2px solid rgba(27,189,232,0.4); }
+  .dado:first-child { padding-left: 0.9rem; border-left: 2px solid rgba(27,189,232,0.4); }
   .contato__container { grid-template-columns: 1fr; }
   .gts__grid { grid-template-columns: 1fr; }
   .numeros__grid { grid-template-columns: 1fr 1fr; }
