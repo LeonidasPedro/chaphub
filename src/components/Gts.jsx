@@ -16,12 +16,11 @@ export default function Gts() {
             <div
               key={c.title}
               className="gt-card fade-in"
-              data-color={c.color}
               style={{ transitionDelay: c.delay }}
             >
               <div className="gt-card__glow"></div>
               <div className="gt-card__logo">
-                <img src={c.logo} alt={c.alt} />
+                {c.logo && <img src={c.logo} alt={c.alt} />}
               </div>
               <div className="gt-card__body">
                 <h3 className="gt-card__title">{c.title}</h3>

@@ -30,9 +30,9 @@ function behindOpacity(t) {
 }
 
 const ORBITS = [
-  { label: 'AGRO', phase: Math.PI / 6, fill: '#0a1a1a', stroke: '#1BBDE8', text: '#1BBDE8' },
-  { label: 'SAÚDE', phase: Math.PI / 6 + (2 * Math.PI) / 3, fill: '#0f0a1a', stroke: '#5855A6', text: '#8b88d9' },
-  { label: 'EDUCAÇÃO', phase: Math.PI / 6 + (4 * Math.PI) / 3, fill: '#0a0a0a', stroke: '#666', text: '#aaa' },
+  { label: 'AGRO', phase: Math.PI / 6 },
+  { label: 'SAÚDE', phase: Math.PI / 6 + (2 * Math.PI) / 3 },
+  { label: 'EDUCAÇÃO', phase: Math.PI / 6 + (4 * Math.PI) / 3 },
 ];
 
 export default function Ecossistema() {
@@ -81,10 +81,6 @@ export default function Ecossistema() {
                 <stop offset="0%" stopColor="#1BBDE8" stopOpacity="0.3" />
                 <stop offset="100%" stopColor="#0D0D0D" stopOpacity="0" />
               </radialGradient>
-              <linearGradient id="lineGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="700" y2="500">
-                <stop offset="0%" stopColor="#1BBDE8" stopOpacity="0.8" />
-                <stop offset="100%" stopColor="#5855A6" stopOpacity="0.8" />
-              </linearGradient>
               <filter id="nodeGlow">
                 <feGaussianBlur stdDeviation="3" result="blur" />
                 <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
@@ -97,16 +93,16 @@ export default function Ecossistema() {
                 ref={(el) => { lineRefs.current[i] = el; }}
                 className="ecos-line"
                 x1={CX} y1={CY} x2={CX} y2={CY}
-                stroke="url(#lineGrad)" strokeWidth="1.5" strokeDasharray="6 3"
+                stroke="rgba(27,189,232,0.55)" strokeWidth="1.5" strokeDasharray="6 3"
                 style={{ animationDelay: `${i * 0.1}s` }}
               />
             ))}
             {ORBITS.map((o, i) => (
               <g key={o.label} ref={(el) => { nodeRefs.current[i] = el; }}>
                 <g className="ecos-node">
-                  <circle r="30" fill={o.fill} stroke={o.stroke} strokeWidth="1.5" filter="url(#nodeGlow)" />
-                  <text y="-3" textAnchor="middle" fill={o.text} fontSize="8" fontFamily="sans-serif" fontWeight="bold">GT</text>
-                  <text y="9" textAnchor="middle" fill={o.text} fontSize={o.label.length > 6 ? 7 : 8} fontFamily="sans-serif" fontWeight="bold">{o.label}</text>
+                  <circle r="30" fill="#0D0D0D" stroke="rgba(255,255,255,0.45)" strokeWidth="1.5" filter="url(#nodeGlow)" />
+                  <text y="-3" textAnchor="middle" fill="rgba(255,255,255,0.85)" fontSize="8" fontFamily="sans-serif" fontWeight="bold">GT</text>
+                  <text y="9" textAnchor="middle" fill="rgba(255,255,255,0.85)" fontSize={o.label.length > 6 ? 7 : 8} fontFamily="sans-serif" fontWeight="bold">{o.label}</text>
                 </g>
               </g>
             ))}

@@ -1,6 +1,5 @@
 export const gts = [
   {
-    color: 'cyan',
     delay: '0s',
     logo: '/chaphub/CLIENTE ECOSSISTEMA/Logos do Ecossistema de Inovação png/AGRO-branca.png',
     alt: 'GT Agro',
@@ -9,7 +8,6 @@ export const gts = [
     tags: ['AgTech', 'Cadeia Produtiva', 'Sustentabilidade'],
   },
   {
-    color: 'purple',
     delay: '0.08s',
     logo: '/chaphub/CLIENTE ECOSSISTEMA/Logos do Ecossistema de Inovação png/SAÚDE-branca.png',
     alt: 'GT Saúde',
@@ -18,10 +16,7 @@ export const gts = [
     tags: ['HealthTech', 'Integração', 'Qualidade'],
   },
   {
-    color: 'dark',
     delay: '0.16s',
-    logo: '/chaphub/CLIENTE ECOSSISTEMA/Logos do Ecossistema de Inovação png/CAM.TEC-branca.png',
-    alt: 'GT Educação',
     title: 'GT Educação',
     text: 'Articula instituições de ensino técnico e superior para fomentar a pesquisa aplicada, a formação de talentos e a aproximação entre academia e mercado, fortalecendo o ecossistema de inovação regional.',
     tags: ['Pesquisa', 'Formação', 'P&D'],

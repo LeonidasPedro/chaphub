@@ -44,6 +44,13 @@ src/
   data/         conteúdo (grupos de trabalho, governança, palavras do typed)
   styles/       CSS global
 public/
-  assets/fonts/ fontes Organetto
   chaphub/      logos do ecossistema
 ```
+
+## Tipografia
+
+A fonte de títulos da marca é a **Organetto** (manual, p.5), mas só existem
+versões DEMO da Fontspring no material do cliente — inválidas em produção.
+Até a licença ser comprada, os títulos usam **Saira** (Google Fonts), que tem
+largura e desenho geométrico próximos. O texto corrido usa **Lato**, que é
+fonte da própria marca.

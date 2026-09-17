@@ -2,34 +2,35 @@ import useFadeIn from '../hooks/useFadeIn.js';
 import NumeroCard from './NumeroCard.jsx';
 
 const iconHabitantes = (
-  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="20" cy="14" r="6" stroke="#1BBDE8" strokeWidth="1.5" />
-    <path d="M6 34c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="#1BBDE8" strokeWidth="1.5" strokeLinecap="round" />
+  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+    <circle cx="20" cy="14" r="6" strokeWidth="1.5" />
+    <path d="M6 34c0-7.732 6.268-14 14-14s14 6.268 14 14" strokeWidth="1.5" strokeLinecap="round" />
   </svg>
 );
 const iconPib = (
-  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="4" y="12" width="32" height="22" rx="3" stroke="#1BBDE8" strokeWidth="1.5" />
-    <path d="M14 12V8a6 6 0 0112 0v4" stroke="#1BBDE8" strokeWidth="1.5" strokeLinecap="round" />
-    <circle cx="20" cy="23" r="3" stroke="#5855A6" strokeWidth="1.5" />
+  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+    <path d="M6 30c5-1 7-6 10-11s6-9 12-11" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M22 8h6v6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <line x1="6" y1="34" x2="34" y2="34" strokeWidth="1.5" strokeLinecap="round" />
   </svg>
 );
 const iconRank = (
-  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <polygon points="20,4 36,34 4,34" stroke="#1BBDE8" strokeWidth="1.5" fill="none" />
-    <path d="M20 14v10M20 28v2" stroke="#5855A6" strokeWidth="1.5" strokeLinecap="round" />
+  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+    <rect x="6" y="22" width="8" height="12" strokeWidth="1.5" />
+    <rect x="16" y="12" width="8" height="22" strokeWidth="1.5" />
+    <rect x="26" y="18" width="8" height="16" strokeWidth="1.5" />
   </svg>
 );
 const iconReceita = (
-  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8 32 L8 20 L16 20 L16 14 L24 14 L24 8 L32 8 L32 32" stroke="#1BBDE8" strokeWidth="1.5" strokeLinejoin="round" />
-    <line x1="4" y1="32" x2="36" y2="32" stroke="#5855A6" strokeWidth="1.5" />
+  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+    <path d="M8 32 L8 20 L16 20 L16 14 L24 14 L24 8 L32 8 L32 32" strokeWidth="1.5" strokeLinejoin="round" />
+    <line x1="4" y1="32" x2="36" y2="32" strokeWidth="1.5" />
   </svg>
 );
 const iconStar = (
-  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 6l2.4 7.4H30l-6.2 4.5 2.4 7.4L20 21l-6.2 4.3 2.4-7.4L10 13.4h7.6z" stroke="#1BBDE8" strokeWidth="1.5" fill="none" />
-    <circle cx="20" cy="20" r="16" stroke="#5855A6" strokeWidth="1" opacity="0.5" />
+  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+    <path d="M20 6l2.4 7.4H30l-6.2 4.5 2.4 7.4L20 21l-6.2 4.3 2.4-7.4L10 13.4h7.6z" strokeWidth="1.5" />
+    <circle cx="20" cy="20" r="16" strokeWidth="1" opacity="0.4" />
   </svg>
 );
 
