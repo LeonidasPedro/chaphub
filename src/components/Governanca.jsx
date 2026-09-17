@@ -8,7 +8,7 @@ export default function Governanca() {
       <div className="container">
         <div className="section-header fade-in">
           <span className="section-label">Governança</span>
-          <h2 className="section-title">Governança</h2>
+          <h2 className="section-title">Instituições e governos que acreditam na inovação de Chapecó</h2>
           <p className="section-desc">Instituições que fazem parte da governança no ecossistema de inovação de Chapecó</p>
         </div>
         <div className="governanca__grid fade-in">
