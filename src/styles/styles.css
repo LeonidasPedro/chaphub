@@ -440,7 +440,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 @keyframes dashFlow { to { stroke-dashoffset: -30; } }
 /* ===== CHAPECÓ ===== */
 .chapeco {
-  padding: clamp(4rem, 8vw, 7rem) 0;
+  padding: clamp(3rem, 5vw, 4.5rem) 0;
   background: var(--dark);
   position: relative;
   overflow: hidden;
@@ -448,10 +448,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .chapeco__map {
   position: absolute;
   top: 50%;
-  right: -18%;
-  width: min(72%, 900px);
+  right: clamp(1rem, 4vw, 4rem);
+  width: min(52%, 640px);
   transform: translateY(-50%);
-  opacity: 0.5;
+  opacity: 0.45;
   pointer-events: none;
 }
 .chapeco__container { position: relative; z-index: 1; max-width: 1200px; }
@@ -653,7 +653,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero__triangle-wrap { display: none; }
   .sobre__grid { grid-template-columns: 1fr; }
   .sobre__visual { display: none; }
-  .chapeco__map { right: -30%; width: 110%; opacity: 0.28; }
+  .chapeco__map { right: 0; width: 100%; opacity: 0.22; }
   .chapeco__dados { gap: 1.5rem 0; }
   .dado { flex: 1 1 100%; padding-left: 0.9rem; border-left: 2px solid rgba(27,189,232,0.4); }
   .dado:first-child { padding-left: 0.9rem; border-left: 2px solid rgba(27,189,232,0.4); }
