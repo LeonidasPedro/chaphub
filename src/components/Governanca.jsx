@@ -12,9 +12,11 @@ export default function Governanca() {
           <p className="section-desc">Instituições que fazem parte da governança no ecossistema de inovação de Chapecó</p>
         </div>
         <div className="governanca__grid fade-in">
-          {governanca.map((name) => (
+          {governanca.map(({ name, logo }) => (
             <div key={name} className="governanca-item">
-              <div className="governanca-logo"><span>{name}</span></div>
+              <div className="governanca-logo" title={name}>
+                {logo ? <img src={logo} alt={name} loading="lazy" /> : <span>{name}</span>}
+              </div>
             </div>
           ))}
         </div>
