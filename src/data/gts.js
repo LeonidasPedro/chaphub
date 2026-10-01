@@ -6,6 +6,7 @@ export const gts = [
     title: 'GT Agro',
     text: 'Reúne cooperativas, agroindústrias, startups e instituições de pesquisa para articular ações de inovação no agronegócio, promovendo a adoção de tecnologias e o desenvolvimento sustentável da cadeia produtiva regional.',
     tags: ['AgTech', 'Cadeia Produtiva', 'Sustentabilidade'],
+    instituicoes: ['epagri', 'sebrae', 'senai', 'unochapeco', 'pollen', 'udesc', 'aurora', 'yaci'],
   },
   {
     delay: '0.08s',
@@ -14,11 +15,13 @@ export const gts = [
     title: 'GT Saúde',
     text: 'Integra hospitais, profissionais, empresas e startups da área da saúde para identificar desafios, propor soluções inovadoras e fortalecer a qualidade dos serviços de saúde no Oeste Catarinense.',
     tags: ['HealthTech', 'Integração', 'Qualidade'],
+    instituicoes: ['unoesc', 'uffs', 'unochapeco', 'pollen', 'udesc', 'uceff', 'senac', 'prefeitura'],
   },
   {
     delay: '0.16s',
     title: 'GT Educação',
     text: 'Articula instituições de ensino técnico e superior para fomentar a pesquisa aplicada, a formação de talentos e a aproximação entre academia e mercado, fortalecendo o ecossistema de inovação regional.',
     tags: ['Pesquisa', 'Formação', 'P&D'],
+    instituicoes: ['unochapeco', 'unisenai', 'udesc', 'ifsc', 'unoesc', 'uceff', 'senac', 'uffs', 'prefeitura'],
   },
 ];

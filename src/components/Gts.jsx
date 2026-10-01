@@ -1,5 +1,6 @@
 import useFadeIn from '../hooks/useFadeIn.js';
 import { gts } from '../data/gts.js';
+import GtInstituicoes from './GtInstituicoes.jsx';
 
 export default function Gts() {
   useFadeIn();
@@ -28,6 +29,7 @@ export default function Gts() {
                 <div className="gt-card__tags">
                   {c.tags.map((t) => <span key={t} className="tag">{t}</span>)}
                 </div>
+                <GtInstituicoes ids={c.instituicoes} />
               </div>
               <div className="gt-card__bar"></div>
             </div>

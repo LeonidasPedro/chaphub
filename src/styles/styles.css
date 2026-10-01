@@ -389,7 +389,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .gt-card__logo { height: 44px; display: flex; align-items: center; }
 .gt-card__logo img { height: 100%; width: auto; object-fit: contain; }
 .gt-card__title { font-family: var(--font-head); font-stretch: 110%; font-size: 1.05rem; font-weight: 700; color: var(--white); }
-.gt-card__text { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.65; flex: 1; font-family: var(--font-text); }
+.gt-card__text { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.65; font-family: var(--font-text); }
 .gt-card__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .tag {
   font-family: var(--font-text);
@@ -415,6 +415,23 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: transform 0.5s ease;
 }
 .gt-card:hover .gt-card__bar { transform: scaleX(1); }
+.gt-card__body { display: flex; flex-direction: column; gap: 1.25rem; flex: 1; }
+.gt-instituicoes { margin-top: auto; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.07); display: flex; flex-direction: column; gap: 0.75rem; }
+.gt-instituicoes__label { font-family: var(--font-text); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+.gt-instituicoes__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
+.instituicao-logo {
+  height: 52px;
+  padding: 0.45rem 0.6rem;
+  border-radius: var(--radius);
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--trans), box-shadow var(--trans);
+}
+.instituicao-logo:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.35); }
+.instituicao-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.instituicao-logo span { font-family: var(--font-text); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink); text-align: center; line-height: 1.2; }
 
 /* ===== ECOSSISTEMA ===== */
 .ecossistema {
