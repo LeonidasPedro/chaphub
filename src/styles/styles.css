@@ -263,8 +263,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .sobre::before { content: ''; position: absolute; top: -100px; right: -100px; width: 400px; height: 400px; background: radial-gradient(circle, var(--cyan-dim), transparent 70%); pointer-events: none; }
 .sobre__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
-.sobre__desc { font-size: 1.05rem; color: rgba(255,255,255,0.65); margin-bottom: 2.5rem; line-height: 1.8; font-family: var(--font-text); }
-.sobre__pillars { display: flex; flex-direction: column; gap: 1.25rem; }
+.sobre__desc { font-size: 1.05rem; color: rgba(255,255,255,0.65); margin-bottom: 1.25rem; line-height: 1.8; font-family: var(--font-text); }
+.sobre__pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: clamp(2.5rem, 5vw, 4rem); }
 .pillar {
   display: flex;
   align-items: flex-start;
@@ -281,18 +281,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .pillar__title { font-family: var(--font-text); font-weight: 700; font-size: 0.9rem; margin-bottom: 0.25rem; color: var(--white); }
 .pillar__text { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.5; font-family: var(--font-text); }
 .sobre__visual { display: flex; align-items: center; justify-content: center; position: relative; }
-.sobre__logo-wrap { position: relative; width: 280px; height: 280px; display: flex; align-items: center; justify-content: center; }
-.sobre__logo-img { width: 200px; height: auto; position: relative; z-index: 3; filter: drop-shadow(0 0 20px rgba(27,189,232,0.3)); }
-.sobre__glow { position: absolute; inset: 0; background: radial-gradient(circle, rgba(27,189,232,0.15) 0%, transparent 70%); border-radius: 50%; }
-.sobre__ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid rgba(27,189,232,0.15);
-  animation: ringPulse 4s ease-in-out infinite;
-}
-.sobre__ring--1 { width: 200px; height: 200px; }
-.sobre__ring--2 { width: 240px; height: 240px; animation-delay: 0.8s; border-color: rgba(88,85,166,0.15); }
-.sobre__ring--3 { width: 280px; height: 280px; animation-delay: 1.6s; }
 @keyframes ringPulse { 0%,100%{ opacity:0.4; transform:scale(1); } 50%{ opacity:0.9; transform:scale(1.03); } }
 
 /* ===== NÚMEROS ===== */
@@ -433,16 +421,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .instituicao-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
 .instituicao-logo span { font-family: var(--font-text); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink); text-align: center; line-height: 1.2; }
 
-/* ===== ECOSSISTEMA ===== */
-.ecossistema {
-  padding: clamp(4rem, 8vw, 7rem) 0;
-  background: var(--black);
-  position: relative;
-  overflow: hidden;
-}
-.ecossistema::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 40%, rgba(88,85,166,0.1) 0%, transparent 60%); pointer-events: none; }
-.ecossistema__diagram { max-width: 700px; margin: 0 auto; }
+/* ===== ÓRBITA DO ECOSSISTEMA (seção Sobre) ===== */
 .ecos-svg { width: 100%; height: auto; }
+.ecos-logo { filter: drop-shadow(0 0 12px rgba(27,189,232,0.35)); }
 .ecos-ring { animation: ringPulse 3s ease-in-out infinite; }
 .ecos-node {
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -609,7 +590,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nav__hamburger { display: flex; }
   .hero__triangle-wrap { display: none; }
   .sobre__grid { grid-template-columns: 1fr; }
-  .sobre__visual { display: none; }
+  .sobre__pillars { grid-template-columns: 1fr; }
   .chapeco__map { right: 0; width: 100%; opacity: 0.22; }
   .chapeco__dados { gap: 1.5rem 0; }
   .dado { flex: 1 1 100%; padding-left: 0.9rem; border-left: 2px solid rgba(27,189,232,0.4); }
