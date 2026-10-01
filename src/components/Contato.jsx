@@ -1,23 +1,7 @@
-import { useRef, useState } from 'react';
 import useFadeIn from '../hooks/useFadeIn.js';
 
 export default function Contato() {
   useFadeIn();
-  const formRef = useRef(null);
-  const [sending, setSending] = useState(false);
-  const [showSuccess, setShowSuccess] = useState(false);
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-    setSending(true);
-    setTimeout(() => {
-      formRef.current?.reset();
-      setSending(false);
-      setShowSuccess(true);
-      setTimeout(() => setShowSuccess(false), 5000);
-    }, 1400);
-  };
-
   return (
     <section className="contato" id="contato">
       <div className="contato__bg"></div>
@@ -52,32 +36,6 @@ export default function Contato() {
             </svg>
             Chapecó, SC — Oeste Catarinense, Brasil
           </div>
-        </div>
-        <div className="contato__form-wrap fade-in" style={{ transitionDelay: '0.15s' }}>
-          <form className="contato__form" ref={formRef} onSubmit={onSubmit}>
-            <div className="form-group">
-              <label htmlFor="nome">Nome</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="org">Organização</label>
-              <input type="text" id="org" name="org" placeholder="Empresa, startup ou instituição" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="msg">Mensagem</label>
-              <textarea id="msg" name="msg" rows="4" placeholder="Como podemos colaborar?" required></textarea>
-            </div>
-            <button type="submit" className="btn btn--gradient btn--full" disabled={sending}>
-              {sending ? 'Enviando...' : 'Enviar Mensagem'}
-            </button>
-            <div className="form-success" style={{ display: showSuccess ? 'block' : 'none' }}>
-              Mensagem enviada! Em breve entraremos em contato.
-            </div>
-          </form>
         </div>
       </div>
     </section>
