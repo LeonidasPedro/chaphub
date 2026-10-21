@@ -3,6 +3,7 @@ const LOGO_H = `${BASE}/CHAPHUB-horizontal-branca.png`;
 const SUB = [
   { src: `${BASE}/AGRO-branca.png`, alt: 'GT Agro' },
   { src: `${BASE}/SAÚDE-branca.png`, alt: 'GT Saúde' },
+  { src: `${BASE}/EDUCAÇÃO-branca.png`, alt: 'GT Educação' },
 ];
 
 export default function Footer() {
