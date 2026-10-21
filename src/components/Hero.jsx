@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="hero__overlay"></div>
       <div className="hero__content">
         <h1 className="hero__title">
-          Incentivar Mentes Inovadoras para Desenvolver o{' '}
+          Incentivar Mentes Inovadoras para Desenvolver{' '}
           <span className="hero__title-gradient">Chapecó</span> do{' '}
           <span className="hero__title-gradient">Futuro</span>
         </h1>
