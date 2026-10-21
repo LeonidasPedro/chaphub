@@ -12,8 +12,9 @@ export default function Hero() {
       <div className="hero__overlay"></div>
       <div className="hero__content">
         <h1 className="hero__title">
-          Primeiro Ecossistema de Inovação do{' '}
-          <span className="hero__title-gradient">Oeste Catarinense.</span>
+          Incentivar Mentes Inovadoras para Desenvolver a{' '}
+          <span className="hero__title-gradient">Chapecó</span> do{' '}
+          <span className="hero__title-gradient">Futuro</span>
         </h1>
         <p className="hero__sub">
           <span className="typed-wrapper">
