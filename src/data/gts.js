@@ -19,6 +19,8 @@ export const gts = [
   },
   {
     delay: '0.16s',
+    logo: '/chaphub/CLIENTE ECOSSISTEMA/Logos do Ecossistema de Inovação png/EDUCAÇÃO-branca.png',
+    alt: 'GT Educação',
     title: 'GT Educação',
     text: 'Articula instituições de ensino técnico e superior para fomentar a pesquisa aplicada, a formação de talentos e a aproximação entre academia e mercado, fortalecendo o ecossistema de inovação regional.',
     tags: ['Pesquisa', 'Formação', 'P&D'],
