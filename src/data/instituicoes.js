@@ -15,5 +15,6 @@ export const instituicoes = {
   uffs: { name: 'UFFS', logo: '/instituicoes/uffs.png' },
   unochapeco: { name: 'Unochapecó', logo: '/instituicoes/unochapeco.svg' },
   unoesc: { name: 'UNOESC', logo: '/instituicoes/unoesc.png' },
+  unopar: { name: 'Unopar', logo: '/instituicoes/unopar.png' },
   yaci: { name: 'Yaci Labs' },
 };

@@ -22,6 +22,6 @@ export const gts = [
     title: 'GT Educação',
     text: 'Articula instituições de ensino técnico e superior para fomentar a pesquisa aplicada, a formação de talentos e a aproximação entre academia e mercado, fortalecendo o ecossistema de inovação regional.',
     tags: ['Pesquisa', 'Formação', 'P&D'],
-    instituicoes: ['unochapeco', 'unisenai', 'udesc', 'ifsc', 'unoesc', 'uceff', 'senac', 'uffs', 'prefeitura'],
+    instituicoes: ['unochapeco', 'unisenai', 'unopar', 'udesc', 'ifsc', 'unoesc', 'uceff', 'senac', 'uffs', 'prefeitura'],
   },
 ];
